@@ -26,6 +26,6 @@ This application is developed using AWS CDK in TypeScript.
 
 ## Few notes
 * This is just a POC to show that Ollama can be run on a Virtual Server on AWS and exposed with an UI.  Additional configurations are required for operationalizing this Open Web UI application.
-* This is an expensive solution as I am using `c7i.2xlarge` instance image.  You should look into [AWS Inferentia] (https://aws.amazon.com/machine-learning/inferentia/) images instead.
+* This is an expensive solution as I am using `c7i.2xlarge` instance image.  You should look into [AWS Inferentia](https://aws.amazon.com/machine-learning/inferentia/) images instead.
 
 * _I recommend that we use [AWS Bedrock](https://aws.amazon.com/bedrock/) instead_
