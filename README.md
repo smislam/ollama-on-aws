@@ -1,13 +1,13 @@
 # Run Ollama on AWS
 
-Here, we demonstrate deoployment of Ollama on AWS EC2 Server.  This is a use case that many are trying to implement so that LLMs are run locally on their own servers to keep data private.  
+Here, we demonstrate deployment of Ollama on AWS EC2 Server.  This is a use case that many are trying to implement so that LLMs are run locally on their own servers to keep data private.  
 
-In addition to Ollama, we also install Open-WebUI application for visualization. These 3rd party products are all deployed on an AWS EC2 server, run as Docker containers and exposed using AWS ALB.  The application also includes Llama3 LLM model as default.
+In addition to Ollama, we also install Open-WebUI application for visualization. These 3rd party products are all deployed on an AWS EC2 instance, run as Docker containers and exposed using AWS ALB.  The application also includes Llama3 LLM model as default.
 
 This application is developed using AWS CDK in TypeScript.
 
 ## What does it build?
-* Creates an EC2 Server and deploys Ollama server
+* Creates an EC2 instance and deploys Ollama server
 * Installs Llama3 LLM for use on Ollama server
 * Installs and Configures Open-WebUI application to communicate with Ollama server
 * Creates an AWS ALB to expose the Web application
