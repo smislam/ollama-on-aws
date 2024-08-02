@@ -24,7 +24,7 @@ export class OllamaOnAwsStack extends cdk.Stack {
     const asg = new AutoScalingGroup(this, 'ollama-asg', {
       vpc,
       instanceType: InstanceType.of(InstanceClass.COMPUTE7_INTEL, InstanceSize.XLARGE2),
-      machineImage: MachineImage.latestAmazonLinux2(),
+      machineImage: MachineImage.latestAmazonLinux2023(),
       blockDevices: [{
           deviceName: '/dev/xvda',
           volume: BlockDeviceVolume.ebs(200)
